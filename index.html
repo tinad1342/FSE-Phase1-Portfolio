@@ -9,22 +9,26 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contact Me</a>
-        </nav>
+        <ul class="nav">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact Me</a></li>
+        </ul>
     </header>
     <main>
-        <figure id="about-me">
+        <section id="about-me">
             <h2>About Me</h2>
-            <img src="profile-picture.jpg" alt="Tina and her cat Marty" class="profile-img">
-            <figcaption>My name is Tina and I live in New York City with my cat Marty.</figcaption>
-        </figure>
+            <div class="container">
+                <img src="profile-picture.jpg" alt="Tina and her cat Marty" class="profile-img">
+                <div class="bio">
+                    My name is Tina and I live in New York City with my cat Marty. I have worked at Liberty Mutual Insurance since 2016. I started out as an Data and Reporting Analyst and then moved to the Telematics space. I am now a Product Owner on the Telematics train for the Scott's Tots squad, overseeing Data Ingestion and Aggregation.
+                </div>
+            </div>
+        </section>
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Flexbox</li>
