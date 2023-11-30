@@ -9,26 +9,14 @@ header {
     background-color:powderblue;
     padding: 10px 30px;
     display: flex;
+    justify-content: space-around;
 }
-
-.profile-img {
-    max-width: 100%;
-    width: 20%;
-    height: auto;
-    border-radius : 100%;
-    border: 2px solid powderblue;
-  }
 
 .nav { 
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-h2 {
-    font-size: 2rem;
-    margin: 30px;
 }
 
 li a {
@@ -39,26 +27,56 @@ li a {
     text-decoration: none;
 }
 
+.profile-img {
+    max-width: 100%;
+    width: 30%;
+    height: auto;
+    border-radius : 100%;
+    border: 2px solid powderblue;
+  }
+
+h2 {
+    font-size: 2rem;
+    margin: 30px;
+}
+
 .bio {
     border: 2px solid powderblue;
     border-radius: 5px;
     margin: 20px;
-    max-width: 60%;
+    padding: 5px;
+    max-width: 75%;
 }
 
 .skills-list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    border: 2px solid powderblue;
-    max-height: 300px;
-    margin: 0 auto 50px auto;
-    text-align: left;
+    justify-content: space-around;
+    margin: 20px;
+    text-align: center;
     line-height: 1.6;
+}
+
+.skills-list div {
+    border: 2px solid powderblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    min-width: 30%;
+}
+
+.list-item {
+    display: inline-flex;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+.card {
+    background-color: powderblue;
+    max-width: 200px;
+    margin: 10px;
 }
 
 .card:hover {
@@ -68,8 +86,18 @@ a:hover {
 div.container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
 
 footer {
     text-align: center;
